@@ -23,6 +23,21 @@ body {
 	transform: translate(-50%, -50%);
 	color: #191970;
 }
+
+
+.reg {
+	width: 280px;
+	position: absolute;
+	bottom: 50%;
+	right: 10%;
+	transform: translate(-50%, -50%);
+	color: #191970;
+}
+
+
+
+
+
 .user-box {
 	width: 280px;
 	position: absolute;

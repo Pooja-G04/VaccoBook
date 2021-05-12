@@ -44,7 +44,7 @@ p {text-align: center;}
 			<input class="button" type="submit"
 					name="login" value="Sign In">
 			
-           		<div><h2>New User?<a href="register.html">Sign up</a></2></div>
+           		
 		</div>
 	</form>
 
@@ -70,6 +70,19 @@ p {text-align: center;}
 			
 		</div>
 	</form>
+
+
+<form action="register.php" method="post">
+	<div class="reg">
+
+			<div><h2>New User?<a href="register.html">Sign up</a></2></div>
+			
+	</div>
+	</form>
+
+
+
+
 
 </body>
 
