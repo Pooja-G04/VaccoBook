@@ -1,0 +1,115 @@
+<html>
+<head>
+	<style>
+	body{
+	  background-image:url("mainpage_pic.jpg");
+	}
+	label{
+		 width:150px;
+		 float:left;
+		}
+	input{
+	   width:120px;
+	   margin-left:5px;
+		}
+		form{
+			 background-image:url("mainpage_pic.jpg");
+			margin-left:450px;
+			margin-top:150px;
+			border:inset blue 4px;
+			width:350px;
+			background:yellow;
+			padding:2em;
+			}
+
+	</style>
+	<script>
+	function validate1(){
+		  var username=document.getElementById("username").value
+		  var hname=document.getElementById("hname").value
+		  var area=document.getElementById("area").value
+      var vacc=document.getElementById("vacc").value
+      var trans=document.getElementById('trans').value
+			 if(username=="")
+			  {
+				  alert("Username is blank")
+				   return false;
+			  }
+			   else if(hname=="")
+			  {
+				  alert("Hospital Name is blank")
+				   return false;
+			  }
+			  else if(area=="")
+			  {
+				  alert("Area is blank")
+				   return false;
+			  }
+        else if(vacc=="")
+			  {
+				  alert("Vaccination is blank")
+				   return false;
+			  }else if(trans=="")
+			  {
+				  alert("Transportation is blank")
+				   return false;
+			  }
+			  else{
+				  return true;
+				  }
+		}
+
+	function validate2(){
+		  var name=document.getElementById("hname").value
+			 if(hname=="")
+			  {
+				  alert("Hospital Name is blank")
+				   return false;
+			  }
+			  else{
+			  return true;
+			  }
+		}
+
+	</script>
+</head>
+<body>
+
+<form action="data_hospital.php" method='post'>
+	<label style='width:200px; margin-left:100px;font-weight:bold;'>
+		Add Hospital</label>
+	<br>  <br>
+
+<label>Enter User name</label>
+<input name="username" id="username">
+<br>
+
+<label>Enter Hosptial Name</label>
+<input name="hname" id="hname">
+<br>
+
+<label>Enter Hospital Area</label>
+<input name="area" id="area">
+<br>
+
+<label>Enter Hospital Vaccine</label>
+<input name="vacc" id="vacc">
+<br>
+
+<label>Enter Hospital Transportation</label>
+<input name="trans" id="trans">
+<br>
+
+<input type='submit' name='button' value='Add Hospital'  onclick="return validate1()">
+
+<input type='submit' name='button' value='Search Hospital'  onclick="return validate2()">
+<br>
+<input type='submit' name='button' value='Remove Hospital'  onclick="return validate2()">
+<input type='submit' name='button' value='ShowAll Hospital'>
+<br>
+<input type='submit' name='button' value='Update Hospital'  onclick="return validate1()">
+<input type='reset' value='Reset'>
+
+</form>
+</body>
+</html>

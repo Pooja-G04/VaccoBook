@@ -1,0 +1,378 @@
+<html>
+<title> Get vaccinated </title>
+
+<body style="background-color:LightCyan;">
+
+	
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="bgimg w3-display-container w3-grayscale-min" id="Logout">
+	<h1>... INDIA..... FIGHTS.... BACK...</h1>
+	
+	
+	
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="CORONA1.html">Home</a></li>
+    <li><a  href="hospitaladd.html">Register</a></li>
+    <li><a  href="HDlivedb.php">Hospital Details</a></li>
+    <li><a  href="vac.html">About Us</a></li>
+    <li><a  href="index.html">Logout</a></li>
+</header>
+
+
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>VaccoBook is a platform for the citizens of India to Register for COVID-19 vaccination at the nearest vaccination centers.</h3>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+     <a href="HDlivedb.php"><button type="button">Hospital Details</button></a>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+       <a href="hospitaladd.html"><button type="button">Register</button></a>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <a href="vac.html"><button type="button">about us!</button></a>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+      <a href="index.html"><button type="button">Logout</button></a>
+    </div>
+  </div>
+</div>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("mainpage_pic.jpg");
+  
+  max-height: 50%;
+  height:100px;
+top:0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: White;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/Ry7kpc5/ss1.png" style="width:400px;height:200px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/prLxLyn/ss2.png" style="width:400px;height:200px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/WH5yMjN/ss5.png" style="width:400px;height:200px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/80JtZXw/ss3.png" style="width:400px;height:200px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://i.ibb.co/Ry7kpc5/ss1.png" style="width:400px;height:200px;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="hhttps://i.ibb.co/prLxLyn/ss2.png" style="width:400px;height:200px;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3/ 3</div>
+      <img src="https://i.ibb.co/WH5yMjN/ss5.png" style="width:400px;height:200px;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3/ 4</div>
+      <img src="https://i.ibb.co/80JtZXw/ss3.png" style="width:400px;height:200px;">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/Ry7kpc5/ss1.png" style="width:400px;height:200px;" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/prLxLyn/ss2.png" style="width:400px;height:200px;" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/WH5yMjN/ss5.png" style="width:400px;height:200px;" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/80JtZXw/ss3.png" style="width:400px;height:200px;" onclick="currentSlide(3)" >
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+
+</body>
+<body>
+<style>
+h6{
+
+font-family:Lucida Bright;
+color:white;
+}
+</style>
+<p>
+
+
+
+<h2>Registration for vaccination against COVID-19 for all those aged above 18 will begin from April 28 on VaccoBook.
+<br>
+Everyone above 18 years old will be eligible for a vaccine from May.
+</h2></p></body>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+</style>
+</head>
+<body>
+<img src="https://i.ibb.co/60zjg8k/ss6.png"  style="width:300px;height:400px;">
+<style>
+h3{
+text-align:center;
+font-family:Monospace;
+color:Navy;
+}
+</style>
+<style>
+h2{
+text-align:center;
+font-family:Lucida Bright;
+color:DarkGreen;
+}
+</style>
+<style>
+h5{
+text-align:center;
+font-family:Lucida Bright;
+color:white;
+}
+</style>
+<style>
+h1 {
+text-align: center;
+font-family:Lucida Bright;
+color: red;
+}
+</style>
+<style>
+h4 {
+text-align: center;
+font-family:Lucida Bright;
+color: blue;
+</style>
+}
+<h4> Let's Get Ready To Fight!! </h4>
+</body>
